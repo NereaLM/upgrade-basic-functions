@@ -50,3 +50,16 @@ let resultado = findLongestWord(avengers)
 const numbers = [1, 2, 3, 5, 45, 37, 58];
 let total = numbers.reduce((a, b) => a + b, 0);
  console.log(total);
+
+
+
+ //ITERACION#4: CALCULAR EL PROMEDIO
+//Calcular un promedio es una tarea extremadamente común. Puedes usar este array para probar tu función:
+
+const numbers2 = [12, 21, 38, 5, 45, 37, 6];
+function average(param) {
+    let sum = numbers2.reduce((a, b) => a + b, 0);
+     let promedio = sum / numbers2.length;
+     return promedio;
+}
+ console.log(average(numbers2));
