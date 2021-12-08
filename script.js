@@ -140,3 +140,36 @@ console.log(finderName(nameFinder,"Tony"));
 console.log(finderName(nameFinder,"casa"));
 
 
+
+
+  //ITERACION#8: CONTADOR DE REPETICIONES
+
+// Crea una función que nos devuelva el número de veces que se repite cada una de las palabras que lo conforma.  Puedes usar este array para probar tu función:
+
+
+const counterWords = [
+  'code',
+  'repeat',
+  'eat',
+  'sleep',
+  'code',
+  'enjoy',
+  'sleep',
+  'code',
+  'enjoy',
+  'upgrade',
+  'code'
+];
+function repeatCounter(param) {
+    let contador=0;
+    for (var i = 0; i < counterWords.length; i++) {
+        for (var x = 0; x < counterWords.length; x++) {
+            if (counterWords[i] == counterWords[x]) {
+                contador++;
+            }            
+        }
+        console.log("La palabra " + counterWords[i] + " se repite " + contador);
+        contador = 0;
+    }  
+}
+repeatCounter(counterWords);
