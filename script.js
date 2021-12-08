@@ -39,3 +39,14 @@ function findLongestWord(param) {
 
 let resultado = findLongestWord(avengers)
  console.log(resultado)   
+
+
+ //ITERACIÓN#3: CALCULAR LA SUMA
+
+//Calcular una suma puede ser tan simple como iterar sobre un array y sumar cada uno de los elementos.
+//Implemente la función denominada sumNumbers que toma un array de números como argumento y devuelve la suma de todos los números de la matriz. 
+//Puedes usar este array para probar tu función:
+
+const numbers = [1, 2, 3, 5, 45, 37, 58];
+let total = numbers.reduce((a, b) => a + b, 0);
+ console.log(total);
